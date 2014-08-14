@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunlight</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <nav class="navbar navbar-default" role="navigation">
+	<ul class="nav navbar-nav">
+	<li> 
+  	 <%= link_to "Home" ,  welcomes_show_path , class: "navbar-brand" %></li>
+	<li> 
+  	 <%= link_to "Product Sheet" , product_sheets_path , class: "icon-bar" %></li>
+  	</ul>	
+  </nav>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

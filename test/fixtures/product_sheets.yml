@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  set_price: 1
+  remark: MyText
+  product_class: MyString
+
+two:
+  product_name: MyString
+  set_price: 1
+  remark: MyText
+  product_class: MyString

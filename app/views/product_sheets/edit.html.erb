@@ -1,0 +1,24 @@
+<h1>Edit Product</h1>
+<hr></hr>
+<div class=".input-group">
+<%= form_for @productsheet , :method => 'patch' do |f| %>
+	<%= f.label :Product_Sheet ,class: "col-sm-2 control-label" %>
+	<div class="col-sm-10">
+	<%= f.text_field :product_name ,class: "form-control" %><br>
+	</div>
+	<%= f.label :set_price  ,class: "col-sm-2 control-label" %>
+	<div class="col-sm-10">
+	<%= f.text_field :set_price ,class: "form-control"  %><br>
+	</div>
+	<%= f.label :remark  ,class: "col-sm-2 control-label" %>
+	<div class="col-sm-10">
+	<%= f.text_field :remark  ,class: "form-control" %><br>
+	</div>
+	<%= f.label :product_class ,class: "col-sm-2 control-label" %>
+	<div class="col-sm-10">
+	<%= f.text_field :product_class ,class: "form-control"%><br>
+	</div>
+	<%= f.submit  :class => "btn btn-primary btn-lg" %>
+	<%= link_to "Back" , product_sheets_path , class: "btn btn-default btn-lg" %>
+<%end%>
+</div>
